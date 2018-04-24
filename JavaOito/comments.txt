@@ -1,0 +1,54 @@
+http://blog.caelum.com.br/o-minimo-que-voce-deve-saber-de-java-8/
+
+Três grandes modificações que o java 8 trouxe:
+
+Default Methods:
+
+Um método dentro da interface(só podem haver assinaturas de métodos) que queira ter corpo, conteúdo é necessário o 
+modificador default,estrátegia de evolução de interfaces.
+
+forEach(): Uma parte da API que permite facilitar a iteração dos elementos da lista.
+
+Interfaces Funcionais:
+
+Expressão Lambda:
+
+https://www.ibm.com/developerworks/br/library/j-java8idioms7/index.html
+https://www.devmedia.com.br/como-usar-funcoes-lambda-em-java/32826
+https://pt.wikipedia.org/wiki/C%C3%A1lculo_lambda
+
+
+Methods References:
+
+http://blog.caelum.com.br/java-8-lambda-ou-method-reference-entenda-a-diferenca/
+
+Api Stream:
+
+http://www.oracle.com/technetwork/pt/articles/java/processamento-streams-java-se-8-2763688-ptb.html
+
+Trabalha com o Padrão (Design Pattern) chamado Interface Fluente (fluent interface) onde sempre a mesma interface é devolvida para continuar a fazer o que se quer.
+Todas as modificações feitas no Stream, não afetam a coleção original, por isso é necessário gerar uma outra lista para trabalhar.
+Trabalham de maneira Lazy.
+
+Métodos mais comuns:
+
+filter
+
+map, mapToInt (IntStream)
+
+forEach
+
+sort
+
+collect
+
+Classe Optional:
+
+http://blog.caelum.com.br/chega-de-nullpointerexception-trabalhe-com-o-java-util-optional/
+
+
+Gerando uma coleção a partir de um Stream:
+
+collect( Collectors.toList());
+
+Pacote java.time;
